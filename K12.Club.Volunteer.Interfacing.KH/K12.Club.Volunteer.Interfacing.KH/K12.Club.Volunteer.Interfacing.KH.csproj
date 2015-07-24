@@ -40,6 +40,11 @@
       <HintPath>Library\Aspose.Cells.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Campus.IRewrite.Interface, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\Campus.IRewrite.Interface.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="DevComponents.DotNetBar2, Version=9.5.0.1, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>Library\DevComponents.DotNetBar2.dll</HintPath>
@@ -115,6 +120,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cadre\ClassCadreNameObj.cs" />
+    <Compile Include="Cadre\SchoolObject.cs" />
     <Compile Include="DetailContentBase.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -152,12 +159,15 @@
     <Compile Include="學期結算\ClearingForm.designer.cs">
       <DependentUpon>ClearingForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="學期結算\Clearing.cs" />
     <Compile Include="學期結算\OldAssociationsResults.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\brand_write_64.png" />
     <Content Include="Library\Aspose.Cells.dll" />
     <Content Include="Library\Aspose.Cells.xml" />
+    <Content Include="Library\Campus.IRewrite.Interface.dll" />
+    <Content Include="Library\Campus.IRewrite.Interface.pdb" />
     <Content Include="Library\DevComponents.DotNetBar2.dll" />
     <Content Include="Library\FISCA.Data.dll" />
     <Content Include="Library\FISCA.Data.pdb" />
